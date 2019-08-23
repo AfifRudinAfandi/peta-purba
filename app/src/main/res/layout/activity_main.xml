@@ -11,7 +11,7 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="400dp"
+        android:layout_height="350dp"
         android:orientation="vertical"
         android:background="@drawable/mapmap">
 
@@ -19,9 +19,9 @@
     </LinearLayout>
     <LinearLayout
         android:paddingHorizontal="10dp"
-        android:layout_marginTop="-400dp"
+        android:layout_marginTop="-350dp"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="350dp"
         android:orientation="vertical">
         <LinearLayout
             android:layout_width="wrap_content"
@@ -34,9 +34,10 @@
                 android:layout_marginRight="4dp"
                 android:layout_width="40dp"
                 android:layout_height="25dp"
-                android:background="@drawable/bg_button"
+                android:background="@drawable/ic_button1"
                 android:text="KD"
-                android:fontFamily="@font/source_sans_pro_semibold"
+                android:textSize="10dp"
+                android:fontFamily="@font/ball"
                 android:textAlignment="center"
                 android:textColor="@color/colorWhite"
                 />
@@ -50,8 +51,9 @@
                 android:textAlignment="center"
                 android:textColor="@color/colorWhite"
                 android:text="KI"
-                android:fontFamily="@font/source_sans_pro_semibold"
-                android:background="@drawable/bg_button"/>
+                android:textSize="10dp"
+                android:fontFamily="@font/ball"
+                android:background="@drawable/ic_button1"/>
         </LinearLayout>
         <Button
             android:clickable="true"
@@ -63,26 +65,27 @@
             android:textAlignment="center"
             android:textSize="10dp"
             android:textAllCaps="false"
-            android:textColor="@color/colorWhite"
+            android:textColor="#FFFFFF"
             android:text="Indikator"
-            android:fontFamily="@font/source_sans_pro_semibold"
+            android:fontFamily="@font/ball"
             android:lineHeight="10dp"
-            android:background="@drawable/bg_button"/>
+            android:background="@drawable/ic_button1"/>
+
         <Button
-            android:clickable="true"
-            android:foreground="@drawable/ripple_effect"
             style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_marginTop="4dp"
             android:layout_width="84dp"
             android:layout_height="28dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/ic_button1"
+            android:clickable="true"
+            android:fontFamily="@font/ball"
+            android:foreground="@drawable/ripple_effect"
+            android:lineHeight="8dp"
+            android:text="Tujuan Pembelajaran"
             android:textAlignment="center"
-            android:textSize="10dp"
             android:textAllCaps="false"
             android:textColor="@color/colorWhite"
-            android:text="Tujuan Pembelajaran"
-            android:fontFamily="@font/source_sans_pro_semibold"
-            android:lineHeight="10dp"
-            android:background="@drawable/bg_button"/>
+            android:textSize="8dp" />
         <Button
             android:clickable="true"
             android:foreground="@drawable/ripple_effect"
@@ -91,13 +94,13 @@
             android:layout_width="84dp"
             android:layout_height="28dp"
             android:textAlignment="center"
-            android:textSize="10dp"
+            android:textSize="8dp"
             android:textAllCaps="false"
             android:textColor="@color/colorWhite"
             android:text="Pengetahuan\nAwal"
-            android:fontFamily="@font/source_sans_pro_semibold"
-            android:lineHeight="10dp"
-            android:background="@drawable/bg_button"/>
+            android:fontFamily="@font/ball"
+            android:lineHeight="8dp"
+            android:background="@drawable/ic_button1"/>
         <Button
             android:clickable="true"
             android:foreground="@drawable/ripple_effect"
@@ -106,13 +109,13 @@
             android:layout_width="84dp"
             android:layout_height="28dp"
             android:textAlignment="center"
-            android:textSize="10dp"
+            android:textSize="9dp"
             android:textAllCaps="false"
             android:textColor="@color/colorWhite"
             android:text="Alat Kebudayaan"
-            android:fontFamily="@font/source_sans_pro_semibold"
-            android:lineHeight="10dp"
-            android:background="@drawable/bg_button"/>
+            android:fontFamily="@font/ball"
+            android:lineHeight="9dp"
+            android:background="@drawable/ic_button1"/>
         <Button
             android:clickable="true"
             android:foreground="@drawable/ripple_effect"
@@ -121,13 +124,13 @@
             android:layout_width="84dp"
             android:layout_height="28dp"
             android:textAlignment="center"
-            android:textSize="10dp"
+            android:textSize="9dp"
             android:textAllCaps="false"
             android:textColor="@color/colorWhite"
             android:text="Kehidupan Sosial"
-            android:fontFamily="@font/source_sans_pro_semibold"
-            android:lineHeight="10dp"
-            android:background="@drawable/bg_button"/>
+            android:fontFamily="@font/ball"
+            android:lineHeight="9dp"
+            android:background="@drawable/ic_button1"/>
         <Button
             android:clickable="true"
             android:foreground="@drawable/ripple_effect"
@@ -136,15 +139,15 @@
             android:layout_width="84dp"
             android:layout_height="28dp"
             android:textAlignment="center"
-            android:textSize="10dp"
+            android:textSize="8dp"
             android:textAllCaps="false"
             android:textColor="@color/colorWhite"
             android:text="Daftar Rujukan"
-            android:fontFamily="@font/source_sans_pro_semibold"
+            android:fontFamily="@font/ball"
             android:lineHeight="10dp"
-            android:background="@drawable/bg_button"/>
+            android:background="@drawable/ic_button1"/>
         <LinearLayout
-            android:layout_marginTop="150dp"
+            android:layout_marginTop="100dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -156,7 +159,7 @@
                 android:layout_width="0dp"
                 android:layout_height="28dp"
                 android:layout_weight="1"
-                android:background="@drawable/bg_button"
+                android:background="@drawable/ic_button1"
                 android:text="Evaluasi"
                 android:textAlignment="center"
                 android:textAllCaps="false"
@@ -178,7 +181,7 @@
                 android:textAllCaps="false"
                 android:textColor="@color/colorWhite"
                 android:text="Identitas Peneliti"
-                android:background="@drawable/bg_button"/>
+                android:background="@drawable/ic_button1"/>
         </LinearLayout>
 
     </LinearLayout>

@@ -6,37 +6,73 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:background="@color/colorBlue">
+    android:background="@color/colorBlue"
+    android:gravity="center_vertical">
 
     <LinearLayout
-        android:paddingHorizontal="10dp"
-        android:paddingVertical="10dp"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="400dp"
         android:orientation="vertical"
         android:background="@drawable/mapmap">
 
+
+    </LinearLayout>
+    <LinearLayout
+        android:paddingHorizontal="10dp"
+        android:layout_marginTop="-400dp"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical">
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <Button
+                android:clickable="true"
+                android:foreground="@drawable/ripple_effect"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_marginRight="4dp"
                 android:layout_width="40dp"
                 android:layout_height="25dp"
                 android:background="@drawable/bg_button"
                 android:text="KD"
+                android:fontFamily="@font/source_sans_pro_semibold"
                 android:textAlignment="center"
-                android:textColor="@color/colorWhite" />
+                android:textColor="@color/colorWhite"
+                />
 
             <Button
+                android:clickable="true"
+                android:foreground="@drawable/ripple_effect"
+                style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="40dp"
                 android:layout_height="25dp"
                 android:textAlignment="center"
                 android:textColor="@color/colorWhite"
                 android:text="KI"
+                android:fontFamily="@font/source_sans_pro_semibold"
                 android:background="@drawable/bg_button"/>
         </LinearLayout>
         <Button
+            android:clickable="true"
+            android:foreground="@drawable/ripple_effect"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_marginTop="4dp"
+            android:layout_width="84dp"
+            android:layout_height="28dp"
+            android:textAlignment="center"
+            android:textSize="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:text="Indikator"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:lineHeight="10dp"
+            android:background="@drawable/bg_button"/>
+        <Button
+            android:clickable="true"
+            android:foreground="@drawable/ripple_effect"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_marginTop="4dp"
             android:layout_width="84dp"
             android:layout_height="28dp"
             android:textAlignment="center"
@@ -44,48 +80,107 @@
             android:textAllCaps="false"
             android:textColor="@color/colorWhite"
             android:text="Tujuan Pembelajaran"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:lineHeight="10dp"
             android:background="@drawable/bg_button"/>
         <Button
+            android:clickable="true"
+            android:foreground="@drawable/ripple_effect"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_marginTop="4dp"
             android:layout_width="84dp"
             android:layout_height="28dp"
             android:textAlignment="center"
             android:textSize="10dp"
             android:textAllCaps="false"
             android:textColor="@color/colorWhite"
-            android:text="Petunjuk Penggunaan"
+            android:text="Pengetahuan\nAwal"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:lineHeight="10dp"
             android:background="@drawable/bg_button"/>
-    </LinearLayout>
-    <LinearLayout
-        android:padding="10dp"
-        android:layout_marginTop="-60dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
         <Button
-            android:layout_width="0dp"
+            android:clickable="true"
+            android:foreground="@drawable/ripple_effect"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_marginTop="4dp"
+            android:layout_width="84dp"
             android:layout_height="28dp"
-            android:layout_weight="1"
             android:textAlignment="center"
             android:textSize="10dp"
             android:textAllCaps="false"
             android:textColor="@color/colorWhite"
-            android:text="Soal Evaluasi"
+            android:text="Alat Kebudayaan"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:lineHeight="10dp"
             android:background="@drawable/bg_button"/>
-        <View
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="6"/>
         <Button
-            android:layout_margin="2dp"
-            android:layout_width="0dp"
+            android:clickable="true"
+            android:foreground="@drawable/ripple_effect"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_marginTop="4dp"
+            android:layout_width="84dp"
             android:layout_height="28dp"
-            android:layout_weight="1"
             android:textAlignment="center"
             android:textSize="10dp"
             android:textAllCaps="false"
             android:textColor="@color/colorWhite"
-            android:text="Soal Evaluasi"
+            android:text="Kehidupan Sosial"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:lineHeight="10dp"
             android:background="@drawable/bg_button"/>
+        <Button
+            android:clickable="true"
+            android:foreground="@drawable/ripple_effect"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_marginTop="4dp"
+            android:layout_width="84dp"
+            android:layout_height="28dp"
+            android:textAlignment="center"
+            android:textSize="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:text="Daftar Rujukan"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:lineHeight="10dp"
+            android:background="@drawable/bg_button"/>
+        <LinearLayout
+            android:layout_marginTop="150dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:clickable="true"
+                android:foreground="@drawable/ripple_effect"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button"
+                android:text="Evaluasi"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="10dp" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"/>
+            <Button
+                android:clickable="true"
+                android:foreground="@drawable/ripple_effect"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="10dp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:text="Identitas Peneliti"
+                android:background="@drawable/bg_button"/>
+        </LinearLayout>
+
     </LinearLayout>
 
 

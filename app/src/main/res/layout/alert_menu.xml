@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingVertical="45dp"
+    android:paddingHorizontal="20dp"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:clickable="true"
+            android:foreground="@drawable/ripple_effect"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_marginRight="4dp"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_button1"
+            android:text="KD"
+            android:textSize="10dp"
+            android:fontFamily="@font/ball"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            />
+
+        <Button
+            android:clickable="true"
+            android:foreground="@drawable/ripple_effect"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:text="KI"
+            android:textSize="10dp"
+            android:fontFamily="@font/ball"
+            android:background="@drawable/ic_button1"/>
+    </LinearLayout>
+    <Button
+        android:clickable="true"
+        android:foreground="@drawable/ripple_effect"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_marginTop="4dp"
+        android:layout_width="104dp"
+        android:layout_height="28dp"
+        android:textAlignment="center"
+        android:textSize="10dp"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:text="Indikator"
+        android:fontFamily="@font/ball"
+        android:lineHeight="10dp"
+        android:background="@drawable/ic_button1"/>
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="104dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/ic_button1"
+        android:clickable="true"
+        android:fontFamily="@font/ball"
+        android:foreground="@drawable/ripple_effect"
+        android:lineHeight="10dp"
+        android:text="Tujuan Pembelajaran"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="9dp" />
+
+</LinearLayout>

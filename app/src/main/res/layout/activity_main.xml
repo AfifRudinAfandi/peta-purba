@@ -15,6 +15,175 @@
         android:orientation="vertical"
         android:background="@drawable/mapmap">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="178dp"
+                android:layout_weight=".1">
+
+                <ToggleButton
+                    android:id="@+id/toggleButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ToggleButton"
+                    android:background="@color/colorWhite"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/detail1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="178dp"
+                android:layout_weight=".2"
+                android:visibility="invisible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MEGANTHROPUS PALEOJAVANICUS"
+                    android:lineHeight="5dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="6dp"
+                    android:background="@drawable/bg_button"
+                    android:fontFamily="@font/source_sans_pro_bold"/>
+
+                    <Button
+                        android:id="@+id/megan1"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:clickable="true"
+                        android:foreground="@drawable/ripple_effect"
+                        android:layout_marginTop="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textAlignment="center"
+                        android:textSize="6dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:text="Penemu"
+                        android:fontFamily="@font/source_sans_pro_bold"
+                        android:background="@drawable/bg_button"/>
+                    <Button
+                        android:id="@+id/megan2"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:clickable="true"
+                        android:foreground="@drawable/ripple_effect"
+                        android:layout_marginTop="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textAlignment="center"
+                        android:textSize="6dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:text="Info Lokasi"
+                        android:fontFamily="@font/source_sans_pro_bold"
+                        android:background="@drawable/bg_button"/>
+                    <Button
+                        android:id="@+id/megan3"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:clickable="true"
+                        android:foreground="@drawable/ripple_effect"
+                        android:layout_marginTop="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textAlignment="center"
+                        android:textSize="6dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:text="Ciri fisik"
+                        android:fontFamily="@font/source_sans_pro_bold"
+                        android:background="@drawable/bg_button"/>
+                    <Button
+                        android:id="@+id/megan4"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:clickable="true"
+                        android:foreground="@drawable/ripple_effect"
+                        android:layout_marginTop="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textAlignment="center"
+                        android:textSize="6dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:text="Masa Hidup"
+                        android:fontFamily="@font/source_sans_pro_bold"
+                        android:background="@drawable/bg_button"/>
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame2"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="152dp"
+                android:layout_weight=".1"
+                android:background="@color/colorBlack">
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/detail2"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="152dp"
+                android:layout_weight=".2"
+                android:background="@color/colorWhite"></FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame3"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="252dp"
+                android:layout_weight=".1"
+                android:background="@color/colorBlack"></FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/detail3"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="252dp"
+                android:layout_weight=".2"
+                android:background="@color/colorWhite"></FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame4"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="178dp"
+                android:layout_weight=".1"
+                android:background="@color/colorBlack"></FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/detail4"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="178dp"
+                android:layout_weight=".2"
+                android:background="@color/colorWhite"></FrameLayout>
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight=".18" />
+
+        </LinearLayout>
+
 
     </LinearLayout>
     <LinearLayout
@@ -23,39 +192,8 @@
         android:layout_width="match_parent"
         android:layout_height="350dp"
         android:orientation="vertical">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <Button
-                android:clickable="true"
-                android:foreground="@drawable/ripple_effect"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_marginRight="4dp"
-                android:layout_width="40dp"
-                android:layout_height="25dp"
-                android:background="@drawable/ic_button1"
-                android:text="KD"
-                android:textSize="10dp"
-                android:fontFamily="@font/ball"
-                android:textAlignment="center"
-                android:textColor="@color/colorWhite"
-                />
-
-            <Button
-                android:clickable="true"
-                android:foreground="@drawable/ripple_effect"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="40dp"
-                android:layout_height="25dp"
-                android:textAlignment="center"
-                android:textColor="@color/colorWhite"
-                android:text="KI"
-                android:textSize="10dp"
-                android:fontFamily="@font/ball"
-                android:background="@drawable/ic_button1"/>
-        </LinearLayout>
         <Button
+            android:id="@+id/menu1"
             android:clickable="true"
             android:foreground="@drawable/ripple_effect"
             style="@style/Widget.AppCompat.Button.Borderless"
@@ -65,27 +203,11 @@
             android:textAlignment="center"
             android:textSize="10dp"
             android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            android:text="Indikator"
-            android:fontFamily="@font/ball"
-            android:lineHeight="10dp"
-            android:background="@drawable/ic_button1"/>
-
-        <Button
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="84dp"
-            android:layout_height="28dp"
-            android:layout_marginTop="4dp"
-            android:background="@drawable/ic_button1"
-            android:clickable="true"
-            android:fontFamily="@font/ball"
-            android:foreground="@drawable/ripple_effect"
-            android:lineHeight="8dp"
-            android:text="Tujuan Pembelajaran"
-            android:textAlignment="center"
-            android:textAllCaps="false"
             android:textColor="@color/colorWhite"
-            android:textSize="8dp" />
+            android:text="Menu"
+            android:fontFamily="@font/ball"
+            android:lineHeight="8dp"
+            android:background="@drawable/ic_button1"/>
         <Button
             android:clickable="true"
             android:foreground="@drawable/ripple_effect"
@@ -147,7 +269,7 @@
             android:lineHeight="10dp"
             android:background="@drawable/ic_button1"/>
         <LinearLayout
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="155dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">

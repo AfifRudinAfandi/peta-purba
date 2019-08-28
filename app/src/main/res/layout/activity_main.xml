@@ -9,180 +9,518 @@
     android:background="@color/colorBlue"
     android:gravity="center_vertical">
 
+
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="350dp"
         android:orientation="vertical"
         android:background="@drawable/mapmap">
 
+
         <LinearLayout
+            android:layout_marginTop="140dp"
             android:layout_width="match_parent"
-            android:layout_height="350dp"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clickable="false">
 
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="1" />
+                android:layout_weight=".54" />
 
             <FrameLayout
                 android:layout_width="0dp"
-                android:layout_height="30dp"
-                android:layout_marginTop="178dp"
-                android:layout_weight=".1">
+                android:layout_height="48dp"
+                android:layout_weight=".05">
 
                 <ToggleButton
-                    android:id="@+id/toggleButton1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="ToggleButton"
-                    android:background="@color/colorWhite"/>
+                    android:id="@+id/toggleButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:text="ToggleButton" />
             </FrameLayout>
 
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight=".002"/>
+
             <FrameLayout
-                android:id="@+id/detail1"
+                android:id="@+id/detail4"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="178dp"
-                android:layout_weight=".2"
+                android:layout_weight=".1"
                 android:visibility="invisible">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:background="@color/colorWhite">
 
-                <TextView
-                    android:textAlignment="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="MEGANTHROPUS PALEOJAVANICUS"
-                    android:lineHeight="5dp"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="6dp"
-                    android:background="@drawable/bg_button"
-                    android:fontFamily="@font/source_sans_pro_bold"/>
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_button"
+                        android:fontFamily="@font/source_sans_pro_bold"
+                        android:lineHeight="10dp"
+                        android:text="PITHECANTHROPUS MODJOKERTENSIS"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10dp" />
 
                     <Button
-                        android:id="@+id/megan1"
                         style="@style/Widget.AppCompat.Button.Borderless"
-                        android:clickable="true"
-                        android:foreground="@drawable/ripple_effect"
-                        android:layout_marginTop="2dp"
                         android:layout_width="match_parent"
                         android:layout_height="20dp"
-                        android:textAlignment="center"
-                        android:textSize="6dp"
-                        android:textAllCaps="false"
-                        android:textColor="@color/colorWhite"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bg_button"
+                        android:clickable="true"
+                        android:fontFamily="@font/source_sans_pro_bold"
+                        android:foreground="@drawable/ripple_effect"
                         android:text="Penemu"
-                        android:fontFamily="@font/source_sans_pro_bold"
-                        android:background="@drawable/bg_button"/>
-                    <Button
-                        android:id="@+id/megan2"
-                        style="@style/Widget.AppCompat.Button.Borderless"
-                        android:clickable="true"
-                        android:foreground="@drawable/ripple_effect"
-                        android:layout_marginTop="2dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="20dp"
                         android:textAlignment="center"
-                        android:textSize="6dp"
                         android:textAllCaps="false"
                         android:textColor="@color/colorWhite"
+                        android:textSize="10dp" />
+
+                    <Button
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bg_button"
+                        android:clickable="true"
+                        android:fontFamily="@font/source_sans_pro_bold"
+                        android:foreground="@drawable/ripple_effect"
                         android:text="Info Lokasi"
-                        android:fontFamily="@font/source_sans_pro_bold"
-                        android:background="@drawable/bg_button"/>
-                    <Button
-                        android:id="@+id/megan3"
-                        style="@style/Widget.AppCompat.Button.Borderless"
-                        android:clickable="true"
-                        android:foreground="@drawable/ripple_effect"
-                        android:layout_marginTop="2dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="20dp"
                         android:textAlignment="center"
-                        android:textSize="6dp"
                         android:textAllCaps="false"
                         android:textColor="@color/colorWhite"
+                        android:textSize="10dp" />
+
+                    <Button
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bg_button"
+                        android:clickable="true"
+                        android:fontFamily="@font/source_sans_pro_bold"
+                        android:foreground="@drawable/ripple_effect"
                         android:text="Ciri fisik"
-                        android:fontFamily="@font/source_sans_pro_bold"
-                        android:background="@drawable/bg_button"/>
-                    <Button
-                        android:id="@+id/megan4"
-                        style="@style/Widget.AppCompat.Button.Borderless"
-                        android:clickable="true"
-                        android:foreground="@drawable/ripple_effect"
-                        android:layout_marginTop="2dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="20dp"
                         android:textAlignment="center"
-                        android:textSize="6dp"
                         android:textAllCaps="false"
                         android:textColor="@color/colorWhite"
-                        android:text="Masa Hidup"
+                        android:textSize="10dp" />
+
+                    <Button
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bg_button"
+                        android:clickable="true"
                         android:fontFamily="@font/source_sans_pro_bold"
-                        android:background="@drawable/bg_button"/>
+                        android:foreground="@drawable/ripple_effect"
+                        android:text="Masa Hidup"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10dp" />
                 </LinearLayout>
             </FrameLayout>
-
-            <FrameLayout
-                android:id="@+id/frame2"
-                android:layout_width="0dp"
-                android:layout_height="30dp"
-                android:layout_marginTop="152dp"
-                android:layout_weight=".1"
-                android:background="@color/colorBlack">
-
-            </FrameLayout>
-
-            <FrameLayout
-                android:id="@+id/detail2"
-                android:layout_width="0dp"
-                android:layout_height="30dp"
-                android:layout_marginTop="152dp"
-                android:layout_weight=".2"
-                android:background="@color/colorWhite"></FrameLayout>
-
-            <FrameLayout
-                android:id="@+id/frame3"
-                android:layout_width="0dp"
-                android:layout_height="30dp"
-                android:layout_marginTop="252dp"
-                android:layout_weight=".1"
-                android:background="@color/colorBlack"></FrameLayout>
-
-            <FrameLayout
-                android:id="@+id/detail3"
-                android:layout_width="0dp"
-                android:layout_height="30dp"
-                android:layout_marginTop="252dp"
-                android:layout_weight=".2"
-                android:background="@color/colorWhite"></FrameLayout>
-
-            <FrameLayout
-                android:id="@+id/frame4"
-                android:layout_width="0dp"
-                android:layout_height="30dp"
-                android:layout_marginTop="178dp"
-                android:layout_weight=".1"
-                android:background="@color/colorBlack"></FrameLayout>
-
-            <FrameLayout
-                android:id="@+id/detail4"
-                android:layout_width="0dp"
-                android:layout_height="30dp"
-                android:layout_marginTop="178dp"
-                android:layout_weight=".2"
-                android:background="@color/colorWhite"></FrameLayout>
-
 
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight=".18" />
+                android:layout_weight=".03" />
 
         </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="-28dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clickable="false">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight=".46" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight=".05">
+
+                <ToggleButton
+                    android:id="@+id/toggleButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:text="ToggleButton" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight=".002"/>
+
+            <FrameLayout
+                android:id="@+id/detail3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:visibility="invisible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/colorWhite">
+
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_button"
+                        android:fontFamily="@font/source_sans_pro_bold"
+                        android:lineHeight="10dp"
+                        android:text="HOMO WAJAKENSIS"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10dp" />
+
+                    <Button
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bg_button"
+                        android:clickable="true"
+                        android:fontFamily="@font/source_sans_pro_bold"
+                        android:foreground="@drawable/ripple_effect"
+                        android:text="Penemu"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10dp" />
+
+                    <Button
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bg_button"
+                        android:clickable="true"
+                        android:fontFamily="@font/source_sans_pro_bold"
+                        android:foreground="@drawable/ripple_effect"
+                        android:text="Info Lokasi"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10dp" />
+
+                    <Button
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bg_button"
+                        android:clickable="true"
+                        android:fontFamily="@font/source_sans_pro_bold"
+                        android:foreground="@drawable/ripple_effect"
+                        android:text="Ciri fisik"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10dp" />
+
+                    <Button
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bg_button"
+                        android:clickable="true"
+                        android:fontFamily="@font/source_sans_pro_bold"
+                        android:foreground="@drawable/ripple_effect"
+                        android:text="Masa Hidup"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10dp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight=".1" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="-217dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clickable="false">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight=".4" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight=".05">
+
+                <ToggleButton
+                    android:id="@+id/toggleButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:text="ToggleButton" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight=".002"/>
+
+            <FrameLayout
+                android:id="@+id/detail2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:visibility="invisible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/colorWhite">
+
+                    <TextView
+                        android:padding="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_button"
+                        android:fontFamily="@font/source_sans_pro_bold"
+                        android:lineHeight="10dp"
+                        android:text="PITHECANTHROPUS ERECTUS"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10dp" />
+
+                    <Button
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bg_button"
+                        android:clickable="true"
+                        android:fontFamily="@font/source_sans_pro_bold"
+                        android:foreground="@drawable/ripple_effect"
+                        android:text="Penemu"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10dp" />
+
+                    <Button
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bg_button"
+                        android:clickable="true"
+                        android:fontFamily="@font/source_sans_pro_bold"
+                        android:foreground="@drawable/ripple_effect"
+                        android:text="Info Lokasi"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10dp" />
+
+                    <Button
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bg_button"
+                        android:clickable="true"
+                        android:fontFamily="@font/source_sans_pro_bold"
+                        android:foreground="@drawable/ripple_effect"
+                        android:text="Ciri fisik"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10dp" />
+
+                    <Button
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bg_button"
+                        android:clickable="true"
+                        android:fontFamily="@font/source_sans_pro_bold"
+                        android:foreground="@drawable/ripple_effect"
+                        android:text="Masa Hidup"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10dp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight=".2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="-96dp"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal"
+            android:clickable="false">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight=".3" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight=".05">
+
+                <ToggleButton
+                    android:id="@+id/toggleButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:text="ToggleButton" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight=".002"/>
+
+            <FrameLayout
+                android:id="@+id/detail1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:visibility="invisible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/colorWhite">
+
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_button"
+                        android:fontFamily="@font/source_sans_pro_bold"
+                        android:lineHeight="10dp"
+                        android:text="MEGANTHROPUS PALEOJAVANICUS"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10dp" />
+
+                    <Button
+                        android:id="@+id/megan1"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bg_button"
+                        android:clickable="true"
+                        android:fontFamily="@font/source_sans_pro_bold"
+                        android:foreground="@drawable/ripple_effect"
+                        android:text="Penemu"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10dp" />
+
+                    <Button
+                        android:id="@+id/megan2"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bg_button"
+                        android:clickable="true"
+                        android:fontFamily="@font/source_sans_pro_bold"
+                        android:foreground="@drawable/ripple_effect"
+                        android:text="Info Lokasi"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10dp" />
+
+                    <Button
+                        android:id="@+id/megan3"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bg_button"
+                        android:clickable="true"
+                        android:fontFamily="@font/source_sans_pro_bold"
+                        android:foreground="@drawable/ripple_effect"
+                        android:text="Ciri fisik"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10dp" />
+
+                    <Button
+                        android:id="@+id/megan4"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bg_button"
+                        android:clickable="true"
+                        android:fontFamily="@font/source_sans_pro_bold"
+                        android:foreground="@drawable/ripple_effect"
+                        android:text="Masa Hidup"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10dp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight=".28" />
+        </LinearLayout>
+
+
 
 
     </LinearLayout>
@@ -199,7 +537,7 @@
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_marginTop="4dp"
             android:layout_width="84dp"
-            android:layout_height="28dp"
+            android:layout_height="30dp"
             android:textAlignment="center"
             android:textSize="10dp"
             android:textAllCaps="false"
@@ -214,7 +552,7 @@
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_marginTop="4dp"
             android:layout_width="84dp"
-            android:layout_height="28dp"
+            android:layout_height="30dp"
             android:textAlignment="center"
             android:textSize="8dp"
             android:textAllCaps="false"
@@ -229,7 +567,7 @@
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_marginTop="4dp"
             android:layout_width="84dp"
-            android:layout_height="28dp"
+            android:layout_height="30dp"
             android:textAlignment="center"
             android:textSize="9dp"
             android:textAllCaps="false"
@@ -244,7 +582,7 @@
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_marginTop="4dp"
             android:layout_width="84dp"
-            android:layout_height="28dp"
+            android:layout_height="30dp"
             android:textAlignment="center"
             android:textSize="9dp"
             android:textAllCaps="false"
@@ -259,7 +597,7 @@
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_marginTop="4dp"
             android:layout_width="84dp"
-            android:layout_height="28dp"
+            android:layout_height="30dp"
             android:textAlignment="center"
             android:textSize="8dp"
             android:textAllCaps="false"
@@ -269,9 +607,10 @@
             android:lineHeight="10dp"
             android:background="@drawable/ic_button1"/>
         <LinearLayout
-            android:layout_marginTop="155dp"
+            android:clickable="false"
+            android:layout_marginTop="150dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:orientation="horizontal">
 
             <Button
@@ -279,15 +618,17 @@
                 android:foreground="@drawable/ripple_effect"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
-                android:layout_height="28dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/ic_button1"
                 android:text="Evaluasi"
+                android:fontFamily="@font/ball"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textColor="@color/colorWhite"
                 android:textSize="10dp" />
             <View
+                android:clickable="false"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="7"/>
@@ -296,8 +637,9 @@
                 android:foreground="@drawable/ripple_effect"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
-                android:layout_height="28dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:fontFamily="@font/ball"
                 android:textAlignment="center"
                 android:textSize="10dp"
                 android:textAllCaps="false"
